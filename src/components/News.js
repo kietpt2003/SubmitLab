@@ -343,7 +343,7 @@ export default function News() {
     function isValidURL(str) {
         // Tạo một biểu thức chính quy để kiểm tra đường dẫn
         // Biểu thức chính quy này kiểm tra xem chuỗi có bắt đầu bằng 'http', 'https' hay không
-        let pattern = /^(http(s)?:\/\/)?[\w-]+(\.[a-z]{2,})(:\d{1,5})?(.*)?$/;
+        let pattern = /^(http(s)?:\/\/)[\w-]+(\.[a-z]{2,})(:\d{1,5})?(.*)?$/;
         // Sử dụng test() để kiểm tra chuỗi với biểu thức chính quy
         return pattern.test(str);
     }
