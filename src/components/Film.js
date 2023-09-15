@@ -102,7 +102,7 @@ export default function Film() {
         const index = arrayOfUserID.indexOf(userID);
         if (notFavo === 'true') {
             newValue = 'false';
-            arrayOfUserID.splice(index, 1); //Xóa 1 phần tử từ vị trí đó(do index truyền vô là id mà id bắt đầu từ 1)
+            arrayOfUserID.splice(index, 1); //Xóa 1 phần tử từ vị trí đó(index bắt đầu từ 1)
             await updateFavo(filmID, arrayOfUserID);
             console.log('Unfavo film: ' + filmName);
         } else {
