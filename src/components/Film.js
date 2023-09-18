@@ -43,11 +43,11 @@ export default function Film() {
     const getFavoFilm = async () => {
         try {
             const urlName = 'https://64e75fafb0fd9648b78fdde6.mockapi.io/listFavo/'
-            const res = await fetch(urlName);
+            const res = await fetch(urlName); //Prototype - Response
             if (!res.ok) {
                 throw new Error('Failed to fetch data')
             }
-            const films = await res.json();
+            const films = await res.json(); //Promise
             let arrayFavo = []
             for (let i = 0; i < films.length; i++) {
                 if (films[i].userID.includes(JSON.parse(localStorage.getItem('profile'))?.id)) {

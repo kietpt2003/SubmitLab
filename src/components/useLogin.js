@@ -12,7 +12,6 @@ export function useLogin() {
     const login = useGoogleLogin({
         onSuccess: (codeResponse) => {
             setUser(codeResponse)
-            console.log('test')
         },
         onError: (error) => console.log('Login Failed:', error)
     });

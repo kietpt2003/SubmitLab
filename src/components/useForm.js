@@ -41,7 +41,7 @@ export function useForm(initialValue) {
             const res = await axios.post('https://64e75fafb0fd9648b78fdde6.mockapi.io/formSuggestion', {
                 name: form.name,
                 phone: form.phone,
-                email: form.phone,
+                email: form.email,
                 suggestion: form.suggestion
             })
             return 'send success';

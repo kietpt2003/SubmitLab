@@ -1,6 +1,6 @@
 import { Box, Container, Grid, Typography } from '@mui/material'
 import { blue, grey } from '@mui/material/colors'
-import React, { Component, useContext } from 'react'
+import React, { useContext } from 'react'
 import { ThemeContext } from './ThemeContext'
 
 export default function Footer() {
